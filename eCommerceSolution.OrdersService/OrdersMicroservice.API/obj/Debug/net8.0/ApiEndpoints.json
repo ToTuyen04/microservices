@@ -1,0 +1,129 @@
+[
+  {
+    "ContainingType": "OrdersMicroservice.API.ApiControllers.OrdersController",
+    "Method": "GetOrders",
+    "RelativePath": "api/orders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrdersMicroservice.API.ApiControllers.OrdersController",
+    "Method": "AddOrder",
+    "RelativePath": "api/orders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderAddRequest",
+        "Type": "BusinessLogicLayer.DTO.OrderAddRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrdersMicroservice.API.ApiControllers.OrdersController",
+    "Method": "UpdateOrder",
+    "RelativePath": "api/orders/{orderID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "orderUpdateRequest",
+        "Type": "BusinessLogicLayer.DTO.OrderUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrdersMicroservice.API.ApiControllers.OrdersController",
+    "Method": "DeleteOrder",
+    "RelativePath": "api/orders/{orderID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrdersMicroservice.API.ApiControllers.OrdersController",
+    "Method": "GetOrdersByOrderDate",
+    "RelativePath": "api/orders/search/orderdate/{orderDate}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderDate",
+        "Type": "System.DateTime",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrdersMicroservice.API.ApiControllers.OrdersController",
+    "Method": "GetOrdersByOrderID",
+    "RelativePath": "api/orders/search/orderid/{orderID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrdersMicroservice.API.ApiControllers.OrdersController",
+    "Method": "GetOrdersByProductID",
+    "RelativePath": "api/orders/search/productid/{productID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrdersMicroservice.API.ApiControllers.OrdersController",
+    "Method": "GetOrdersByUserID",
+    "RelativePath": "api/orders/search/userid/{userID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

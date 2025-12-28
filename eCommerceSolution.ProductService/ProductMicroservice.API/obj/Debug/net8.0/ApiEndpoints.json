@@ -1,0 +1,128 @@
+[
+  {
+    "ContainingType": "ProductMicroservice.API.APIEndpoints.ProductAPIEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapProductAPIEndpoints\u003Eb__0_0",
+    "RelativePath": "api/products",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProductMicroservice.API.APIEndpoints.ProductAPIEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapProductAPIEndpoints\u003Eb__0_3",
+    "RelativePath": "api/products",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BusinessLogicLayer.DTO.ProductUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProductMicroservice.API.APIEndpoints.ProductAPIEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapProductAPIEndpoints\u003Eb__0_4",
+    "RelativePath": "api/products",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BusinessLogicLayer.DTO.ProductAddRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProductMicroservice.API.APIEndpoints.ProductAPIEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapProductAPIEndpoints\u003Eb__0_2",
+    "RelativePath": "api/products/{ProductID:guid}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ProductID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProductMicroservice.API.APIEndpoints.ProductAPIEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapProductAPIEndpoints\u003Eb__0_5",
+    "RelativePath": "api/products/search/{SearchString}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SearchString",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProductMicroservice.API.APIEndpoints.ProductAPIEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapProductAPIEndpoints\u003Eb__0_1",
+    "RelativePath": "api/products/search/product-id/{ProductID:guid}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ProductID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
