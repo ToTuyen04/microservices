@@ -28,6 +28,7 @@ builder.Services.AddCors(builder =>
 });
 
 builder.Services.AddTransient<IUsersMicroservicePolicies, UsersMicroserivcePolicies>();
+builder.Services.AddTransient<IProductsMicroservicePolicies, ProductsMicroservicePolicies>();
 builder.Services.AddHttpClient<UsersMicroserviceClient>(client =>
 {
     client.BaseAddress = new Uri($"http://{builder.Configuration["UsersMicroserviceName"]}:{builder.Configuration["UsersMicroservicePort"]}");
@@ -40,7 +41,8 @@ builder.Services.AddHttpClient<UsersMicroserviceClient>(client =>
 builder.Services.AddHttpClient<ProductsMicroserviceClient>(client =>
 {
     client.BaseAddress = new Uri($"http://{builder.Configuration["ProductsMicroserviceName"]}:{builder.Configuration["ProductsMicroservicePort"]}");
-});
+}).AddPolicyHandler(
+    builder.Services.BuildServiceProvider().GetRequiredService<IProductsMicroservicePolicies>().GetFallbackPolicy());
 
 var app = builder.Build();
 //dùng trực tiếp Use<tên middleware>();

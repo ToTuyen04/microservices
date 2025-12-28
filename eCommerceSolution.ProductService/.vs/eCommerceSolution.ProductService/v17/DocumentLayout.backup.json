@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "ProductMicroservice.API\\Program.cs",
               "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.ProductService\\ProductMicroservice.API\\Program.cs",
               "RelativeToolTip": "ProductMicroservice.API\\Program.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAADsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-27T14:33:22.308Z",
               "EditorCaption": ""
@@ -115,8 +115,7 @@
               "RelativeToolTip": "ProductMicroservice.API\\Dockerfile",
               "ViewState": "AgIAABMAAAAAAAAAAAAAACEAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-26T10:20:54.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-26T10:20:54.302Z"
             },
             {
               "$type": "Document",
