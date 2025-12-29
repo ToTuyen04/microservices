@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\httpclients\\usersmicroserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\httpclients\\usersmicroserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D929A5F2-3C90-4C34-AD95-B5C231976022}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\ordersmicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D929A5F2-3C90-4C34-AD95-B5C231976022}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|solutionrelative:ordersmicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\policies\\pollypolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\policies\\pollypolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\policies\\productsmicroservicepolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\policies\\productsmicroservicepolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\httpclients\\productsmicroserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\httpclients\\productsmicroserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\policies\\iusersmicroservicepolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\policies\\iusersmicroservicepolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\policies\\usersmicroserivcepolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\policies\\usersmicroserivcepolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\policies\\iusersmicroservicepolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\policies\\iusersmicroservicepolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D929A5F2-3C90-4C34-AD95-B5C231976022}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\ordersmicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D929A5F2-3C90-4C34-AD95-B5C231976022}|OrdersMicroservice.API\\OrdersMicroservice.API.csproj|solutionrelative:ordersmicroservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\policies\\ipollypolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\policies\\ipollypolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,79 +39,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsersMicroserviceClient.cs",
-              "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\HttpClients\\UsersMicroserviceClient.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\HttpClients\\UsersMicroserviceClient.cs",
-              "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\HttpClients\\UsersMicroserviceClient.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\HttpClients\\UsersMicroserviceClient.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAuwDgAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T11:03:25.169Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IUsersMicroservicePolicies.cs",
-              "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Policies\\IUsersMicroservicePolicies.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Policies\\IUsersMicroservicePolicies.cs",
-              "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Policies\\IUsersMicroservicePolicies.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Policies\\IUsersMicroservicePolicies.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T11:08:42.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductsMicroserviceClient.cs",
-              "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\HttpClients\\ProductsMicroserviceClient.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\HttpClients\\ProductsMicroserviceClient.cs",
-              "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\HttpClients\\ProductsMicroserviceClient.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\HttpClients\\ProductsMicroserviceClient.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA5wBIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T11:03:25.192Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductsMicroservicePolicies.cs",
-              "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Policies\\ProductsMicroservicePolicies.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Policies\\ProductsMicroservicePolicies.cs",
-              "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Policies\\ProductsMicroservicePolicies.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Policies\\ProductsMicroservicePolicies.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAcwA8AAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T11:03:25.208Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\OrdersMicroservice.API\\Program.cs",
               "RelativeDocumentMoniker": "OrdersMicroservice.API\\Program.cs",
               "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\OrdersMicroservice.API\\Program.cs",
               "RelativeToolTip": "OrdersMicroservice.API\\Program.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAACgAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T11:01:33.916Z",
+              "WhenOpened": "2025-12-29T08:16:32.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "ProductsMicroservicePolicies.cs",
+              "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Policies\\ProductsMicroservicePolicies.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Policies\\ProductsMicroservicePolicies.cs",
+              "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Policies\\ProductsMicroservicePolicies.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Policies\\ProductsMicroservicePolicies.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T07:48:38.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "UsersMicroserivcePolicies.cs",
               "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Policies\\UsersMicroserivcePolicies.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\Policies\\UsersMicroserivcePolicies.cs",
               "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Policies\\UsersMicroserivcePolicies.cs",
               "RelativeToolTip": "BusinessLogicLayer\\Policies\\UsersMicroserivcePolicies.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAqwDMAAACAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwA0AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T06:53:56.461Z",
+              "WhenOpened": "2025-12-29T07:42:03.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUsersMicroservicePolicies.cs",
+              "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Policies\\IUsersMicroservicePolicies.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Policies\\IUsersMicroservicePolicies.cs",
+              "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Policies\\IUsersMicroservicePolicies.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Policies\\IUsersMicroservicePolicies.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T07:41:54.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IPollyPolicies.cs",
+              "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Policies\\IPollyPolicies.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Policies\\IPollyPolicies.cs",
+              "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Policies\\IPollyPolicies.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Policies\\IPollyPolicies.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T07:40:41.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PollyPolicies.cs",
+              "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Policies\\PollyPolicies.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Policies\\PollyPolicies.cs",
+              "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\Policies\\PollyPolicies.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Policies\\PollyPolicies.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T07:33:41.6Z",
               "EditorCaption": ""
             }
           ]

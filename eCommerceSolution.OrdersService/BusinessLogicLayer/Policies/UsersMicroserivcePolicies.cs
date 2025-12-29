@@ -1,55 +1,29 @@
 ﻿
 using Microsoft.Extensions.Logging;
 using Polly;
+using Polly.Bulkhead;
 using Polly.CircuitBreaker;
 using Polly.Retry;
 using Polly.Timeout;
+using Polly.Wrap;
 
 namespace BusinessLogicLayer.Policies;
 public class UsersMicroserivcePolicies : IUsersMicroservicePolicies
 {
     private readonly ILogger<UsersMicroserivcePolicies> _logger;
-    public UsersMicroserivcePolicies(ILogger<UsersMicroserivcePolicies> logger)
+    private readonly IPollyPolicies _pollyPolicies;
+    public UsersMicroserivcePolicies(ILogger<UsersMicroserivcePolicies> logger, IPollyPolicies pollyPolicies)
     {
         _logger = logger;
+        _pollyPolicies = pollyPolicies;
     }
 
-    public IAsyncPolicy<HttpResponseMessage> GetCircuitBreakerPolicy()
+    public IAsyncPolicy<HttpResponseMessage> GetCombinedPolicy()
     {
-        AsyncCircuitBreakerPolicy<HttpResponseMessage> policy = Policy.HandleResult<HttpResponseMessage>(r => !r.IsSuccessStatusCode)
-        .CircuitBreakerAsync(
-            handledEventsAllowedBeforeBreaking: 3, // Number of retries
-            durationOfBreak: TimeSpan.FromMinutes(2),
-            onBreak: (outcome, timespan) =>
-            {
-                // TO DO: Add logs
-                _logger.LogInformation($"Circuit breaker opened for {timespan.TotalMinutes} minutes due to consecutive 3 failures. The subsequent requests will be blocked");
-            },
-            onReset: () =>
-            {
-                _logger.LogInformation($"Circuit breaker closed. The subsequent will be allowed.");
-            });
-        return policy;
-    }
-
-    public IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
-    {
-        //Microsoft.Extensions.Http.Polly NuGet package
-        AsyncRetryPolicy<HttpResponseMessage> policy = Policy.HandleResult<HttpResponseMessage>(r => !r.IsSuccessStatusCode)
-        .WaitAndRetryAsync(
-            retryCount: 5, // Number of retries
-            sleepDurationProvider: retryAttemp => TimeSpan.FromSeconds(Math.Pow(2, retryAttemp)),
-            onRetry: (outcome, timespan, retryAttempt, context) =>
-            {
-                // TO DO: Add logs
-                _logger.LogInformation($"Retry {retryAttempt} after {timespan.TotalSeconds} seconds");
-            });
-        return policy;
-    }
-
-    public IAsyncPolicy<HttpResponseMessage> GetTimeoutPolicy()
-    {
-        AsyncTimeoutPolicy<HttpResponseMessage> policy = Policy.TimeoutAsync<HttpResponseMessage>(TimeSpan.FromMilliseconds(1500));
-        return policy;
+        var retryPolicy = _pollyPolicies.GetRetryPolicy(5);
+        var circuitBreakerPolicy = _pollyPolicies.GetCircuitBreakerPolicy(3,TimeSpan.FromMinutes(2)) ;
+        var timeoutPolicy = _pollyPolicies.GetTimeoutPolicy(TimeSpan.FromSeconds(5));
+        AsyncPolicyWrap<HttpResponseMessage> combinedPolicy = Policy.WrapAsync(retryPolicy, circuitBreakerPolicy, timeoutPolicy);
+        return combinedPolicy;
     }
 }
