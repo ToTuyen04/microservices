@@ -162,12 +162,12 @@ services:
       MONGODB_HOST: mongodb-container
       MONGODB_PORT: "27017"
       NUGET_FALLBACK_PACKAGES: /.nuget/fallbackpackages
-      ProductsMicroserviceName: producs-microservice
+      ProductsMicroserviceName: apigateway
       ProductsMicroservicePort: "8080"
       REDIS_HOST: redis
       REDIS_PORT: "6379"
-      UsersMicroserviceName: users-microservice
-      UsersMicroservicePort: "9090"
+      UsersMicroserviceName: apigateway
+      UsersMicroservicePort: "8080"
     image: ordersmicroserviceapi:dev
     labels:
       com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/bin/Debug/net8.0/OrdersMicroservice.API.dll"'

@@ -59,12 +59,12 @@ services:
       MONGODB_DATABASE: OrdersDatabase
       MONGODB_HOST: mongodb-container
       MONGODB_PORT: "27017"
-      ProductsMicroserviceName: producs-microservice
+      ProductsMicroserviceName: apigateway
       ProductsMicroservicePort: "8080"
       REDIS_HOST: redis
       REDIS_PORT: "6379"
-      UsersMicroserviceName: users-microservice
-      UsersMicroservicePort: "9090"
+      UsersMicroserviceName: apigateway
+      UsersMicroservicePort: "8080"
     image: ordersmicroserviceapi
     networks:
       ecommerce-network: null

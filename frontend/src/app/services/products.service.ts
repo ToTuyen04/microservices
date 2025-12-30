@@ -21,11 +21,11 @@ export class ProductsService {
   }
 
   searchProducts(searchString: string): Observable<ProductResponse[]> {
-    return this.http.get<ProductResponse[]>(`${this.productsAPIURL}search/${searchString}`);
+    return this.http.get<ProductResponse[]>(`${this.productsAPIURL}/search/${searchString}`);
   }
 
   getProductByProductID(productID: string): Observable<ProductResponse> {
-    return this.http.get<ProductResponse>(`${this.productsAPIURL}search/product-id/${productID}`);
+    return this.http.get<ProductResponse>(`${this.productsAPIURL}/search/product-id/${productID}`);
   }
 
   updateProduct(productUpdateRequest: ProductUpdateRequest): Observable<ProductResponse> {

@@ -85,7 +85,7 @@ export class CartService {
     }
 
     getOrdersByUserID(userID: string): Observable<OrderResponse[]> {
-        return this.http.get<OrderResponse[]>(`${this.ordersAPIURL}search/userid/${userID}`);
+        return this.http.get<OrderResponse[]>(`${this.ordersAPIURL}/search/userid/${userID}`);
     }
 
     getOrders(): Observable<OrderResponse[]> {

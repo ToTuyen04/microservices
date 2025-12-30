@@ -109,7 +109,7 @@
 
     {
       "UpstreamPathTemplate": "/gateway/products/search/product-id/{productID}",
-      "DownstreamPathTemplate": "/api/products/{productID}",
+      "DownstreamPathTemplate": "/api/products/search/product-id/{productID}",
       "DownstreamHostAndPorts": [
         {
           "Host": "producs-microservice",
@@ -136,7 +136,7 @@
 
     //Users
     {
-      "UpstreamPathTemplate": "/gateway/auth/login",
+      "UpstreamPathTemplate": "/gateway/users/auth/login",
       "DownstreamPathTemplate": "/api/auth/login",
       "DownstreamHostAndPorts": [
         {
@@ -149,7 +149,7 @@
     },
 
     {
-      "UpstreamPathTemplate": "/gateway/auth/register",
+      "UpstreamPathTemplate": "/gateway/users/auth/register",
       "DownstreamPathTemplate": "/api/auth/register",
       "DownstreamHostAndPorts": [
         {
