@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{BE71EEB4-E7B9-4CC1-B630-353C0657EE8A}|eCommerce.API\\eCommerce.API.csproj|solutionrelative:ecommerce.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BE71EEB4-E7B9-4CC1-B630-353C0657EE8A}|eCommerce.API\\eCommerce.API.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.userservice\\ecommerce.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BE71EEB4-E7B9-4CC1-B630-353C0657EE8A}|eCommerce.API\\eCommerce.API.csproj|solutionrelative:ecommerce.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE71EEB4-E7B9-4CC1-B630-353C0657EE8A}|eCommerce.API\\eCommerce.API.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.userservice\\ecommerce.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BE71EEB4-E7B9-4CC1-B630-353C0657EE8A}|eCommerce.API\\eCommerce.API.csproj|solutionrelative:ecommerce.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BE71EEB4-E7B9-4CC1-B630-353C0657EE8A}|eCommerce.API\\eCommerce.API.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.userservice\\ecommerce.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE71EEB4-E7B9-4CC1-B630-353C0657EE8A}|eCommerce.API\\eCommerce.API.csproj|solutionrelative:ecommerce.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE71EEB4-E7B9-4CC1-B630-353C0657EE8A}|eCommerce.API\\eCommerce.API.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.userservice\\ecommerce.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{BE71EEB4-E7B9-4CC1-B630-353C0657EE8A}|eCommerce.API\\eCommerce.API.csproj|solutionrelative:ecommerce.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE71EEB4-E7B9-4CC1-B630-353C0657EE8A}|eCommerce.API\\eCommerce.API.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.userservice\\ecommerce.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{BE71EEB4-E7B9-4CC1-B630-353C0657EE8A}|eCommerce.API\\eCommerce.API.csproj|solutionrelative:ecommerce.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{236753D1-01B0-48D3-B40C-F04F6393ABF9}|eCommerce.Core\\eCommerce.Core.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.userservice\\ecommerce.core\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{924B7E41-78DA-4F9D-B589-B2ACA27093DB}|eCommerce.Infrastructure\\eCommerce.Infrastructure.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.userservice\\ecommerce.infrastructure\\dbcontext\\dapperdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{924B7E41-78DA-4F9D-B589-B2ACA27093DB}|eCommerce.Infrastructure\\eCommerce.Infrastructure.csproj|solutionrelative:ecommerce.infrastructure\\dbcontext\\dapperdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE71EEB4-E7B9-4CC1-B630-353C0657EE8A}|eCommerce.API\\eCommerce.API.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.userservice\\ecommerce.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BE71EEB4-E7B9-4CC1-B630-353C0657EE8A}|eCommerce.API\\eCommerce.API.csproj|solutionrelative:ecommerce.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +46,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.UserService\\eCommerce.API\\Program.cs",
               "RelativeDocumentMoniker": "eCommerce.API\\Program.cs",
@@ -58,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.UserService\\eCommerce.API\\Dockerfile",
               "RelativeDocumentMoniker": "eCommerce.API\\Dockerfile",
@@ -66,11 +66,12 @@
               "RelativeToolTip": "eCommerce.API\\Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-26T14:48:17.999Z"
+              "WhenOpened": "2025-12-26T14:48:17.999Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UserDTO.cs",
               "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.UserService\\eCommerce.Core\\DTO\\UserDTO.cs",
               "RelativeDocumentMoniker": "eCommerce.Core\\DTO\\UserDTO.cs",
@@ -82,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UsersRepository.cs",
               "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.UserService\\eCommerce.Infrastructure\\Repositories\\UsersRepository.cs",
               "RelativeDocumentMoniker": "eCommerce.Infrastructure\\Repositories\\UsersRepository.cs",
@@ -100,14 +101,14 @@
               "RelativeDocumentMoniker": "eCommerce.API\\Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.UserService\\eCommerce.API\\Controllers\\UsersController.cs",
               "RelativeToolTip": "eCommerce.API\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBUAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-26T08:03:13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.UserService\\eCommerce.API\\appsettings.json",
               "RelativeDocumentMoniker": "eCommerce.API\\appsettings.json",
@@ -119,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "DapperDbContext.cs",
               "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.UserService\\eCommerce.Infrastructure\\DbContext\\DapperDbContext.cs",
               "RelativeDocumentMoniker": "eCommerce.Infrastructure\\DbContext\\DapperDbContext.cs",
@@ -131,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.UserService\\eCommerce.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "eCommerce.API\\Properties\\launchSettings.json",
@@ -139,7 +140,8 @@
               "RelativeToolTip": "eCommerce.API\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-26T07:58:07.675Z"
+              "WhenOpened": "2025-12-26T07:58:07.675Z",
+              "EditorCaption": ""
             }
           ]
         }

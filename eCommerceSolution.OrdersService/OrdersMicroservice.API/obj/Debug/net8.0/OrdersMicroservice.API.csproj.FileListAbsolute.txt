@@ -132,3 +132,6 @@ C:\Users\tomin\Desktop\microservices\eCommerceSolution.OrdersService\OrdersMicro
 C:\Users\tomin\Desktop\microservices\eCommerceSolution.OrdersService\OrdersMicroservice.API\obj\Debug\net8.0\OrdersMicroservice.API.pdb
 C:\Users\tomin\Desktop\microservices\eCommerceSolution.OrdersService\OrdersMicroservice.API\obj\Debug\net8.0\OrdersMicroservice.API.genruntimeconfig.cache
 C:\Users\tomin\Desktop\microservices\eCommerceSolution.OrdersService\OrdersMicroservice.API\obj\Debug\net8.0\ref\OrdersMicroservice.API.dll
+C:\Users\tomin\Desktop\microservices\eCommerceSolution.OrdersService\OrdersMicroservice.API\bin\Debug\net8.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\tomin\Desktop\microservices\eCommerceSolution.OrdersService\OrdersMicroservice.API\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\tomin\Desktop\microservices\eCommerceSolution.OrdersService\OrdersMicroservice.API\bin\Debug\net8.0\StackExchange.Redis.dll

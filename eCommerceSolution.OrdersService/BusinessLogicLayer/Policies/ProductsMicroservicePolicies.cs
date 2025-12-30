@@ -43,8 +43,8 @@ public class ProductsMicroservicePolicies : IProductsMicroservicePolicies
                     UnitPrice: 0,
                     QuantityInStock: 0
                 );
-
-                HttpResponseMessage response = new HttpResponseMessage(System.Net.HttpStatusCode.OK)
+                //Khi trả về fallback thì HttpStatusCode là ServiceUnavailable
+                HttpResponseMessage response = new HttpResponseMessage(System.Net.HttpStatusCode.ServiceUnavailable)
                 {
                     Content = new StringContent(JsonSerializer.Serialize(productDTO), Encoding.UTF8, "application/json")
                 };

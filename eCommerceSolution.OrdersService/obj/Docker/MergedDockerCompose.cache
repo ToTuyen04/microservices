@@ -49,6 +49,8 @@ services:
       MONGODB_PORT: "27017"
       ProductsMicroserviceName: producs-microservice
       ProductsMicroservicePort: "8080"
+      REDIS_HOST: redis
+      REDIS_PORT: "6379"
       UsersMicroserviceName: users-microservice
       UsersMicroservicePort: "9090"
     image: ordersmicroserviceapi
@@ -132,6 +134,21 @@ services:
         target: 8080
         published: "6001"
         protocol: tcp
+  redis:
+    image: redis:latest
+    networks:
+      ecommerce-network: null
+    ports:
+      - mode: ingress
+        target: 6379
+        published: "6379"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: c:/Users/tomin/Desktop/microservices/redis-cache
+        target: /data
+        bind:
+          create_host_path: true
   users-microservice:
     depends_on:
       postgres-container:
