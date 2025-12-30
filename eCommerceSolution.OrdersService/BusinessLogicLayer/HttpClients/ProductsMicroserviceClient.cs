@@ -48,7 +48,7 @@ public class ProductsMicroserviceClient
                 {
                     ProductDTO? productFromFallback = await httpResponseMessage.Content.ReadFromJsonAsync<ProductDTO>();
                     if (productFromFallback == null)
-                        throw new ArgumentException("Invalid product from fallback");
+                        throw new NotImplementedException();
                     return productFromFallback;
                 }
                 else if (httpResponseMessage.StatusCode == System.Net.HttpStatusCode.NotFound)
