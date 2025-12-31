@@ -34,7 +34,7 @@ internal class RabbitMQPublisher : IRabbitMQPublisher, IDisposable
     {
         string messageJson = JsonSerializer.Serialize(message);
         byte[] messageBodyInBytes = Encoding.UTF8.GetBytes(messageJson);
-        string exchangeName = "products.exchange";
+        string exchangeName = _configuration["RabbitMQ_Products_Exchange"];
         _channel.ExchangeDeclare(
             exchange: exchangeName, 
             type: ExchangeType.Direct, 

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BusinessLogicLayer.DTO;
+using BusinessLogicLayer.RabbitMQ;
 using BusinessLogicLayer.ServiceContracts;
 using DataAccessLayer.Entity;
 using DataAccessLayer.IRepository;
@@ -16,12 +17,14 @@ internal class ProductService : IProductService
     private readonly IValidator<ProductAddRequest> _proAddRequestValidator;
     private readonly IValidator<ProductUpdateRequest> _proUpdateRequestValidator;
     private readonly IMapper _mapper;
-    public ProductService(IProductRepository productRepo, IValidator<ProductAddRequest> addValidator, IValidator<ProductUpdateRequest> updateValidator, IMapper mapper)
+    private readonly IRabbitMQPublisher _rabbitMQPublisher;
+    public ProductService(IProductRepository productRepo, IValidator<ProductAddRequest> addValidator, IValidator<ProductUpdateRequest> updateValidator, IMapper mapper, IRabbitMQPublisher rabbitMQPublisher)
     {
         _productRepo = productRepo;
         _proAddRequestValidator = addValidator;
         _proUpdateRequestValidator = updateValidator;
         _mapper = mapper;
+        _rabbitMQPublisher = rabbitMQPublisher;
     }
     public async Task<ProductResponse?> AddProduct(ProductAddRequest request)
     {
@@ -101,9 +104,17 @@ internal class ProductService : IProductService
 
         //Map to product entity
         Product inputP = _mapper.Map<Product>(request);
+
+        //Check if product name is changed
+        bool isProductNameChanged = request.ProductName != existingProduct.ProductName;
+
         Product? updatedP =  await _productRepo.UpdateProduct(inputP);
-        if (updatedP == null)
-            return null;
+        if (isProductNameChanged)
+        {
+            string routingKey = "product.update.name";
+            var message = new ProductNameUpdateMessage(inputP.ProductID, inputP.ProductName);
+            _rabbitMQPublisher.Publish(routingKey, message);
+        }
         return _mapper.Map<ProductResponse?>(updatedP);
     }
 }
