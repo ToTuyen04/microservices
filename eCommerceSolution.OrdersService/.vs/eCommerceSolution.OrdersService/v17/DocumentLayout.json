@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\httpclients\\productsmicroserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\httpclients\\productsmicroserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7278BF4F-BDF1-4885-A1EA-6B8D2665C061}|ApiGateway\\ApiGateway.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\apigateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7278BF4F-BDF1-4885-A1EA-6B8D2665C061}|ApiGateway\\ApiGateway.csproj|solutionrelative:apigateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductsMicroserviceClient.cs",
-              "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\HttpClients\\ProductsMicroserviceClient.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\HttpClients\\ProductsMicroserviceClient.cs",
-              "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\HttpClients\\ProductsMicroserviceClient.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\HttpClients\\ProductsMicroserviceClient.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAowAkAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T11:52:24.588Z",
+              "Title": "ocelot.json",
+              "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\ApiGateway\\ocelot.json",
+              "RelativeDocumentMoniker": "ApiGateway\\ocelot.json",
+              "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\ApiGateway\\ocelot.json",
+              "RelativeToolTip": "ApiGateway\\ocelot.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-31T04:26:44.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAHoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-12-30T15:37:32.702Z",
               "EditorCaption": ""
             }
           ]

@@ -120,7 +120,7 @@ services:
       - ecommerce-network
 
   rabbitmq:
-    image: 4.2.2-management
+    image: rabbitmq:4.2.2-management
     ports:
       - "5672:5672"
       - "15672:15672"

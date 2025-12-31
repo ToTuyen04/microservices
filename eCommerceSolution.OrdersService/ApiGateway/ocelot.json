@@ -11,7 +11,7 @@
         }
       ],
       "UpstreamHttpMethod": [ "Get", "Post", "Options" ],
-      "UpstreamScheme": "http"
+      "UpstreamScheme": "http",
 
       "FileCacheOptions": {
         "TtlSeconds": 30,

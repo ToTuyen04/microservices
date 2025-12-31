@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BusinessLogicLayer.Mapper;
+using BusinessLogicLayer.RabbitMQ;
 using BusinessLogicLayer.ServiceContracts;
 using BusinessLogicLayer.Services;
 using BusinessLogicLayer.Validator;
@@ -29,6 +30,7 @@ public static class DependencyInjection
         //đăng ký toàn bộ các validator trong assembly này (vì các validator này đều đc kế thừa từ AbstractValidator<T>)
         services.AddValidatorsFromAssemblyContaining<ProductAddRequestValidator>();
         services.AddScoped<IProductService, ProductService>();
+        services.AddTransient<IRabbitMQPublisher, RabbitMQPublisher>();
         return services;
     }
 }
