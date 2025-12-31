@@ -113,7 +113,7 @@ internal class ProductService : IProductService
         {
             string routingKey = "product.update.name";
             var message = new ProductNameUpdateMessage(inputP.ProductID, inputP.ProductName);
-            _rabbitMQPublisher.Publish(routingKey, message);
+            _rabbitMQPublisher.Publish<ProductNameUpdateMessage>(routingKey, message);
         }
         return _mapper.Map<ProductResponse?>(updatedP);
     }
