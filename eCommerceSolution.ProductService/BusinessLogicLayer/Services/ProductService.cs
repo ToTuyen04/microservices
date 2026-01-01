@@ -58,7 +58,16 @@ internal class ProductService : IProductService
         Product? p = await _productRepo.GetProductByCondition(p => p.ProductID == productId);
         if (p == null)
             return false;
-        return await _productRepo.DeleteProduct(p.ProductID);
+        bool isDeleted = await _productRepo.DeleteProduct(p.ProductID);
+
+        if (isDeleted)
+        {
+            string routingKey = "product.delete";
+            ProductDeletionMessage productDeletionMessage = new ProductDeletionMessage(p.ProductID, p.ProductName);
+            _rabbitMQPublisher.Publish<ProductDeletionMessage>(routingKey, productDeletionMessage);
+        }
+
+        return isDeleted;
     }
 
     public async Task<ProductResponse?> GetProductByCondition(Expression<Func<Product, bool>> conditionExpression)
