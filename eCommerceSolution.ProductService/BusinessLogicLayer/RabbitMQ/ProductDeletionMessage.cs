@@ -1,6 +1,7 @@
 ﻿namespace eCommerceSolution.ProductService.BusinessLogicLayer.RabbitMQ
 {
-    public record ProductNameUpdateMessage(Guid ProductID, string? NewName)
+    public record ProductDeletionMessage(Guid ProductID, string? ProductName)
     {
     }
 }
+

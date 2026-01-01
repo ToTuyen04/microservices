@@ -1,13 +1,13 @@
-﻿using AutoMapper;
-using BusinessLogicLayer.DTO;
+﻿using BusinessLogicLayer.DTO;
 using BusinessLogicLayer.Mapper;
+using BusinessLogicLayer.RabbitMQ;
 using BusinessLogicLayer.ServiceContracts;
 using BusinessLogicLayer.Services;
+using eCommerceSolution.OrdersService.BusinessLogicLayer.RabbitMQ;
 using FluentValidation;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using System.Runtime.CompilerServices;
+
 
 namespace BusinessLogicLayer;
 public static class DependencyInjection
@@ -22,6 +22,9 @@ public static class DependencyInjection
         {
             options.Configuration = $"{configuration["REDIS_HOST"]}:{configuration["REDIS_PORT"]}";
         });
+
+        services.AddTransient<IRabbitMQProductNameUpdateConsumer, RabbitMQProductNameUpdateConsumer>();
+        services.AddHostedService<RabbitMQProductNameUpdatedHostedService>();
         return services;
     }
 }

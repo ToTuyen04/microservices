@@ -4,9 +4,9 @@ using BusinessLogicLayer.RabbitMQ;
 using BusinessLogicLayer.ServiceContracts;
 using DataAccessLayer.Entity;
 using DataAccessLayer.IRepository;
+using eCommerceSolution.ProductService.BusinessLogicLayer.RabbitMQ;
 using FluentValidation;
 using FluentValidation.Results;
-using Org.BouncyCastle.Asn1.Ocsp;
 using System.Linq.Expressions;
 
 

@@ -1,5 +1,10 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using eCommerceSolution.OrdersService.BusinessLogicLayer.RabbitMQ;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
+using System.Text;
+using System.Text.Json;
 
 namespace BusinessLogicLayer.RabbitMQ //version 6.8.1
 {
@@ -8,14 +13,16 @@ namespace BusinessLogicLayer.RabbitMQ //version 6.8.1
         private readonly IConfiguration _configuration;
         private readonly IModel _channel;
         private readonly IConnection _connection;
+        private readonly ILogger<RabbitMQProductNameUpdateConsumer> _logger;
 
-        public RabbitMQProductNameUpdateConsumer(IConfiguration configuration)
+        public RabbitMQProductNameUpdateConsumer(IConfiguration configuration, ILogger<RabbitMQProductNameUpdateConsumer> logger)
         {
             _configuration = configuration;
+            _logger = logger;
             var factory = new ConnectionFactory()
             {
                 HostName = _configuration["RabbitMQ_HostName"],
-                Port = int.Parse(_configuration["RabbitMQ_Port"]),
+                Port = Convert.ToInt32(_configuration["RabbitMQ_Port"]),
                 UserName = _configuration["RabbitMQ_UserName"],
                 Password = _configuration["RabbitMQ_Password"]
             };
@@ -39,7 +46,7 @@ namespace BusinessLogicLayer.RabbitMQ //version 6.8.1
             _channel.QueueDeclare(
                 queue: queueName,
                 durable: true,
-                exclusive: false, // true: cho phép nhiều connection cùng sử dụng queue này
+                exclusive: false, // false: cho phép nhiều connection cùng sử dụng queue này
                 autoDelete: false, // true: khi không còn consumer nào kết nối đến queue này thì queue sẽ bị xóa
                 arguments: null); // x-message-ttl, x-dead-letter-exchange, x-max-length, x-expiry...
 
@@ -48,6 +55,22 @@ namespace BusinessLogicLayer.RabbitMQ //version 6.8.1
                 queue: queueName,
                 exchange: exchangeName,
                 routingKey: routingKey);
+
+            //received & consume message
+            EventingBasicConsumer consumer = new EventingBasicConsumer(_channel);
+
+            consumer.Received += (sender, args) =>
+            {
+                byte[] body = args.Body.ToArray();
+                string message = Encoding.UTF8.GetString(body);
+                if (message != null)
+                {
+                    ProductNameUpdateMessage? productNameUpdateMessage = JsonSerializer.Deserialize<ProductNameUpdateMessage>(message);
+                    _logger.LogInformation($"Product name updated: {productNameUpdateMessage.ProductID}, New name: {productNameUpdateMessage.NewName}");
+                }
+            };
+
+            _channel.BasicConsume(queue: queueName, consumer: consumer, autoAck: true);
 
         }
 
