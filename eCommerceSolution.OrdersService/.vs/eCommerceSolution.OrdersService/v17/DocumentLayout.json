@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\rabbitmq\\rabbitmqproductdeletionhostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\rabbitmq\\rabbitmqproductdeletionhostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\rabbitmq\\rabbitmqproductnameupdateconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\rabbitmq\\rabbitmqproductnameupdateconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\rabbitmq\\rabbitmqproductdeletionconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\rabbitmq\\rabbitmqproductdeletionconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\rabbitmq\\irabbitmqproductdeletionconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\rabbitmq\\irabbitmqproductdeletionconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\rabbitmq\\irabbitmqproductnameupdateconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\rabbitmq\\irabbitmqproductnameupdateconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,53 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RabbitMQProductNameUpdateConsumer.cs",
-              "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\RabbitMQ\\RabbitMQProductNameUpdateConsumer.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\RabbitMQ\\RabbitMQProductNameUpdateConsumer.cs",
-              "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\RabbitMQ\\RabbitMQProductNameUpdateConsumer.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\RabbitMQ\\RabbitMQProductNameUpdateConsumer.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAjwEMAAABmAAAAAAAAAA==",
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\DependencyInjection.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\DependencyInjection.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAYwBkAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T02:59:12.349Z",
+              "WhenOpened": "2026-01-01T14:59:49.373Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RabbitMQProductDeletionHostedService.cs",
-              "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\RabbitMQ\\RabbitMQProductDeletionHostedService.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\RabbitMQ\\RabbitMQProductDeletionHostedService.cs",
-              "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\RabbitMQ\\RabbitMQProductDeletionHostedService.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\RabbitMQ\\RabbitMQProductDeletionHostedService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "RabbitMQProductNameUpdateConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\RabbitMQ\\RabbitMQProductNameUpdateConsumer.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\RabbitMQ\\RabbitMQProductNameUpdateConsumer.cs",
+              "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\RabbitMQ\\RabbitMQProductNameUpdateConsumer.cs*",
+              "RelativeToolTip": "BusinessLogicLayer\\RabbitMQ\\RabbitMQProductNameUpdateConsumer.cs*",
+              "ViewState": "AgIAADUAAAAAAAAAAAAYwEMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T03:00:13.464Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IRabbitMQProductDeletionConsumer.cs",
-              "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\RabbitMQ\\IRabbitMQProductDeletionConsumer.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\RabbitMQ\\IRabbitMQProductDeletionConsumer.cs",
-              "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\RabbitMQ\\IRabbitMQProductDeletionConsumer.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\RabbitMQ\\IRabbitMQProductDeletionConsumer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T03:00:11.667Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IRabbitMQProductNameUpdateConsumer.cs",
-              "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\RabbitMQ\\IRabbitMQProductNameUpdateConsumer.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\RabbitMQ\\IRabbitMQProductNameUpdateConsumer.cs",
-              "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\RabbitMQ\\IRabbitMQProductNameUpdateConsumer.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\RabbitMQ\\IRabbitMQProductNameUpdateConsumer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T03:00:10.643Z",
+              "WhenOpened": "2026-01-01T02:59:12.349Z",
               "EditorCaption": ""
             },
             {
@@ -92,7 +58,7 @@
               "RelativeDocumentMoniker": "BusinessLogicLayer\\RabbitMQ\\RabbitMQProductDeletionConsumer.cs",
               "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\RabbitMQ\\RabbitMQProductDeletionConsumer.cs",
               "RelativeToolTip": "BusinessLogicLayer\\RabbitMQ\\RabbitMQProductDeletionConsumer.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAA4wCMAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAADgvyAAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-01T02:23:37.387Z",
               "EditorCaption": ""

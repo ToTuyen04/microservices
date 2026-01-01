@@ -37,13 +37,13 @@ internal class RabbitMQPublisher : IRabbitMQPublisher, IDisposable
         string exchangeName = _configuration["RabbitMQ_Products_Exchange"];
         _channel.ExchangeDeclare(
             exchange: exchangeName, 
-            type: ExchangeType.Fanout, 
+            type: ExchangeType.Topic, 
             durable: true);
 
         //Publish the message to exchange
         _channel.BasicPublish(
             exchange: exchangeName, 
-            routingKey: string.Empty, 
+            routingKey: routingKey, 
             basicProperties: null, //custom when use Header exchange 
             body: messageBodyInBytes);
   
