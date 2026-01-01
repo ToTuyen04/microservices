@@ -39,7 +39,7 @@ namespace BusinessLogicLayer.RabbitMQ //version 6.8.1
             //tạo exchange nếu chưa tồn tại, nếu đã tồn tại thì mở exchange đó ra
             _channel.ExchangeDeclare(
                 exchange: exchangeName,
-                type: ExchangeType.Direct,
+                type: ExchangeType.Fanout,
                 durable: true);
 
             //tạo queue nếu chưa tồn tại, nếu đã tồn tại thì mở queue đó ra
@@ -54,7 +54,7 @@ namespace BusinessLogicLayer.RabbitMQ //version 6.8.1
             _channel.QueueBind(
                 queue: queueName,
                 exchange: exchangeName,
-                routingKey: routingKey);
+                routingKey: string.Empty);
 
             //received & consume message
             EventingBasicConsumer consumer = new EventingBasicConsumer(_channel);

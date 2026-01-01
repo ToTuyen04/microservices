@@ -43,9 +43,9 @@ C:\Users\tomin\Desktop\microservices\eCommerceSolution.OrdersService\bin\Debug\M
 C:\Users\tomin\Desktop\microservices\eCommerceSolution.OrdersService\bin\Debug\Microsoft.AspNetCore.MiddlewareAnalysis.dll
 C:\Users\tomin\Desktop\microservices\eCommerceSolution.OrdersService\bin\Debug\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\tomin\Desktop\microservices\eCommerceSolution.OrdersService\bin\Debug\Polly.Core.dll
+C:\Users\tomin\Desktop\microservices\eCommerceSolution.OrdersService\bin\Debug\RabbitMQ.Client.dll
 C:\Users\tomin\Desktop\microservices\eCommerceSolution.OrdersService\bin\Debug\Microsoft.Extensions.Caching.StackExchangeRedis.dll
 C:\Users\tomin\Desktop\microservices\eCommerceSolution.OrdersService\bin\Debug\AutoMapper.dll
-C:\Users\tomin\Desktop\microservices\eCommerceSolution.OrdersService\bin\Debug\RabbitMQ.Client.dll
 C:\Users\tomin\Desktop\microservices\eCommerceSolution.OrdersService\bin\Debug\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\tomin\Desktop\microservices\eCommerceSolution.OrdersService\bin\Debug\MongoDB.Bson.dll
 C:\Users\tomin\Desktop\microservices\eCommerceSolution.OrdersService\bin\Debug\DnsClient.dll
