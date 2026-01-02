@@ -32,14 +32,20 @@ namespace BusinessLogicLayer.RabbitMQ //version 6.8.1
 
         public void Consume()
         {
-            string routingKey = "product.update.*";
+            //string routingKey = "product.update.*";
+            Dictionary<string, object> headers = new Dictionary<string, object>(){
+                {"x-match", "all" }, //all: tất cả các cặp key-value phải khớp; any: chỉ cần một trong các cặp key-value khớp
+                {"event", "product.update" },
+                {"field", "name" },
+                {"rowCount", 1 }
+            };
             string queueName = "orders.product.update.name.queue";
             string exchangeName = _configuration["RabbitMQ_Products_Exchange"];
 
             //tạo exchange nếu chưa tồn tại, nếu đã tồn tại thì mở exchange đó ra
             _channel.ExchangeDeclare(
                 exchange: exchangeName,
-                type: ExchangeType.Topic,
+                type: ExchangeType.Headers,
                 durable: true);
 
             //tạo queue nếu chưa tồn tại, nếu đã tồn tại thì mở queue đó ra
@@ -54,7 +60,8 @@ namespace BusinessLogicLayer.RabbitMQ //version 6.8.1
             _channel.QueueBind(
                 queue: queueName,
                 exchange: exchangeName,
-                routingKey: routingKey);
+                routingKey: string.Empty,
+                arguments: headers);
 
             //received & consume message
             EventingBasicConsumer consumer = new EventingBasicConsumer(_channel);

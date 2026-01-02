@@ -30,21 +30,23 @@ internal class RabbitMQPublisher : IRabbitMQPublisher, IDisposable
         _channel = _connection.CreateModel();
     }
 
-    public void Publish<T>(string routingKey, T message)
+    public void Publish<T>(Dictionary<string, object> headers, T message)
     {
         string messageJson = JsonSerializer.Serialize(message);
         byte[] messageBodyInBytes = Encoding.UTF8.GetBytes(messageJson);
         string exchangeName = _configuration["RabbitMQ_Products_Exchange"];
         _channel.ExchangeDeclare(
             exchange: exchangeName, 
-            type: ExchangeType.Topic, 
+            type: ExchangeType.Headers, 
             durable: true);
 
         //Publish the message to exchange
+        var basicProperties = _channel.CreateBasicProperties();
+        basicProperties.Headers = headers;
         _channel.BasicPublish(
             exchange: exchangeName, 
-            routingKey: routingKey, 
-            basicProperties: null, //custom when use Header exchange 
+            routingKey: string.Empty, 
+            basicProperties: basicProperties, //custom when use Header exchange 
             body: messageBodyInBytes);
   
     }

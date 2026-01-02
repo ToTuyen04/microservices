@@ -75,8 +75,8 @@ C:\Users\tomin\Desktop\eCommerceSolution.ProductService\ProductMicroservice.API\
 C:\Users\tomin\Desktop\eCommerceSolution.ProductService\ProductMicroservice.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\tomin\Desktop\eCommerceSolution.ProductService\ProductMicroservice.API\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\tomin\Desktop\microservices\eCommerceSolution.ProductService\ProductMicroservice.API\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\tomin\Desktop\microservices\eCommerceSolution.ProductService\ProductMicroservice.API\bin\Debug\net8.0\ProductMicroservice.API.staticwebassets.endpoints.json
 C:\Users\tomin\Desktop\microservices\eCommerceSolution.ProductService\ProductMicroservice.API\bin\Debug\net8.0\appsettings.json
+C:\Users\tomin\Desktop\microservices\eCommerceSolution.ProductService\ProductMicroservice.API\bin\Debug\net8.0\ProductMicroservice.API.staticwebassets.endpoints.json
 C:\Users\tomin\Desktop\microservices\eCommerceSolution.ProductService\ProductMicroservice.API\bin\Debug\net8.0\ProductMicroservice.API.exe
 C:\Users\tomin\Desktop\microservices\eCommerceSolution.ProductService\ProductMicroservice.API\bin\Debug\net8.0\ProductMicroservice.API.deps.json
 C:\Users\tomin\Desktop\microservices\eCommerceSolution.ProductService\ProductMicroservice.API\bin\Debug\net8.0\ProductMicroservice.API.runtimeconfig.json

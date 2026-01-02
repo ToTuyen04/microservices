@@ -62,9 +62,13 @@ internal class ProductService : IProductService
 
         if (isDeleted)
         {
-            string routingKey = "product.delete";
+            //string routingKey = "product.delete";
+            Dictionary<string, object> headers = new Dictionary<string, object>(){
+                {"event", "product.delete" },
+                {"rowCount", 1 }
+            };
             ProductDeletionMessage productDeletionMessage = new ProductDeletionMessage(p.ProductID, p.ProductName);
-            _rabbitMQPublisher.Publish<ProductDeletionMessage>(routingKey, productDeletionMessage);
+            _rabbitMQPublisher.Publish<ProductDeletionMessage>(headers, productDeletionMessage);
         }
 
         return isDeleted;
@@ -120,9 +124,15 @@ internal class ProductService : IProductService
         Product? updatedP =  await _productRepo.UpdateProduct(inputP);
         if (isProductNameChanged)
         {
-            string routingKey = "product.update.name";
+            //string routingKey = "product.update.name";
+            Dictionary<string, object> headers = new Dictionary<string, object>(){
+                {"event", "product.update" },
+                {"field", "name" },
+                {"rowCount", 1 }
+            };
+
             var message = new ProductNameUpdateMessage(inputP.ProductID, inputP.ProductName);
-            _rabbitMQPublisher.Publish<ProductNameUpdateMessage>(routingKey, message);
+            _rabbitMQPublisher.Publish<ProductNameUpdateMessage>(headers, message);
         }
         return _mapper.Map<ProductResponse?>(updatedP);
     }

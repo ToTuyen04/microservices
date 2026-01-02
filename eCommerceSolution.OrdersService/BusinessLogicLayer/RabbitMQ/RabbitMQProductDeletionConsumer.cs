@@ -32,12 +32,17 @@ internal class RabbitMQProductDeletionConsumer : IDisposable, IRabbitMQProductDe
     {
         string queueName = "orders.product.delete.queue";
         string exchangeName = _configuration["RabbitMQ_Products_Exchange"];
-        string routingKey = "product.#";
-        _channel.ExchangeDeclare(exchange: exchangeName, type: ExchangeType.Topic, durable: true);
+        //string routingKey = "product.#";
+        Dictionary<string, object> headers = new Dictionary<string, object>(){
+            {"x-match", "all" },
+            {"event", "product.delete" },
+            {"rowCount", 1 }
+        };
+        _channel.ExchangeDeclare(exchange: exchangeName, type: ExchangeType.Headers, durable: true);
 
         _channel.QueueDeclare(queue: queueName, durable: true, exclusive: false, autoDelete: false);
 
-        _channel.QueueBind(queue: queueName, exchange: exchangeName, routingKey: routingKey, arguments: null);
+        _channel.QueueBind(queue: queueName, exchange: exchangeName, routingKey: string.Empty, arguments: headers);
 
         //received & consume message
         EventingBasicConsumer consumer = new EventingBasicConsumer(_channel);
