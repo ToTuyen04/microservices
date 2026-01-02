@@ -98,18 +98,18 @@ internal class ProductService : IProductService
 
     public async Task<ProductResponse?> UpdateProduct(ProductUpdateRequest request)
     {
-        if(request == null)
+        if (request == null)
         {
             throw new ArgumentNullException(nameof(ProductUpdateRequest));
         }
         Product? existingProduct = await _productRepo.GetProductByCondition(p => p.ProductID == request.ProductID);
-        if(existingProduct == null)
+        if (existingProduct == null)
         {
             throw new ArgumentException($"Invalid Product ID: {request.ProductID}");
         }
 
         ValidationResult validationResult = _proUpdateRequestValidator.Validate(request);
-        if(!validationResult.IsValid)
+        if (!validationResult.IsValid)
         {
             string errors = string.Join(", ", validationResult.Errors.Select(e => e.ErrorMessage));
             throw new ArgumentException(errors);
@@ -119,21 +119,21 @@ internal class ProductService : IProductService
         Product inputP = _mapper.Map<Product>(request);
 
         //Check if product name is changed
-        bool isProductNameChanged = request.ProductName != existingProduct.ProductName;
+        //bool isProductNameChanged = request.ProductName != existingProduct.ProductName;
 
-        Product? updatedP =  await _productRepo.UpdateProduct(inputP);
-        if (isProductNameChanged)
-        {
-            //string routingKey = "product.update.name";
-            Dictionary<string, object> headers = new Dictionary<string, object>(){
+        Product? updatedP = await _productRepo.UpdateProduct(inputP);
+        //if (isProductNameChanged)
+        //{
+        //string routingKey = "product.update.name";
+        Dictionary<string, object> headers = new Dictionary<string, object>(){
                 {"event", "product.update" },
-                {"field", "name" },
                 {"rowCount", 1 }
-            };
+        };
 
-            var message = new ProductNameUpdateMessage(inputP.ProductID, inputP.ProductName);
-            _rabbitMQPublisher.Publish<ProductNameUpdateMessage>(headers, message);
-        }
+        //var message = new ProductNameUpdateMessage(inputP.ProductID, inputP.ProductName);
+        var message = updatedP!;
+        _rabbitMQPublisher.Publish<Product>(headers, message);
+        //}
         return _mapper.Map<ProductResponse?>(updatedP);
     }
 }

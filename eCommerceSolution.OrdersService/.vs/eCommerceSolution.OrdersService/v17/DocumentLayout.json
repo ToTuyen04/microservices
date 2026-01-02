@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\rabbitmq\\rabbitmqproductnameupdateconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\httpclients\\productsmicroserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\httpclients\\productsmicroserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\tomin\\desktop\\microservices\\ecommercesolution.ordersservice\\businesslogiclayer\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54AEB694-FEB7-46A9-9E24-51F1E3668902}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsMicroserviceClient.cs",
+              "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\HttpClients\\ProductsMicroserviceClient.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\HttpClients\\ProductsMicroserviceClient.cs",
+              "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\HttpClients\\ProductsMicroserviceClient.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\HttpClients\\ProductsMicroserviceClient.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAqwEoAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T03:40:50.78Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -32,14 +49,14 @@
               "RelativeDocumentMoniker": "BusinessLogicLayer\\RabbitMQ\\RabbitMQProductNameUpdateConsumer.cs",
               "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\RabbitMQ\\RabbitMQProductNameUpdateConsumer.cs",
               "RelativeToolTip": "BusinessLogicLayer\\RabbitMQ\\RabbitMQProductNameUpdateConsumer.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAuwEgAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAuwEsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-02T03:31:03.668Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\DependencyInjection.cs",
@@ -57,7 +74,7 @@
               "RelativeDocumentMoniker": "BusinessLogicLayer\\RabbitMQ\\RabbitMQProductDeletionConsumer.cs",
               "ToolTip": "C:\\Users\\tomin\\Desktop\\microservices\\eCommerceSolution.OrdersService\\BusinessLogicLayer\\RabbitMQ\\RabbitMQProductDeletionConsumer.cs",
               "RelativeToolTip": "BusinessLogicLayer\\RabbitMQ\\RabbitMQProductDeletionConsumer.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAADwvzUAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAqwEQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-01T02:23:37.387Z",
               "EditorCaption": ""

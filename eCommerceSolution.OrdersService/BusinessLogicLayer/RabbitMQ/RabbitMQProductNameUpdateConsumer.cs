@@ -1,4 +1,6 @@
-﻿using eCommerceSolution.OrdersService.BusinessLogicLayer.RabbitMQ;
+﻿using BusinessLogicLayer.DTO;
+using eCommerceSolution.OrdersService.BusinessLogicLayer.RabbitMQ;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using RabbitMQ.Client;
@@ -14,8 +16,9 @@ namespace BusinessLogicLayer.RabbitMQ //version 6.8.1
         private readonly IModel _channel;
         private readonly IConnection _connection;
         private readonly ILogger<RabbitMQProductNameUpdateConsumer> _logger;
+        private readonly IDistributedCache _cache;
 
-        public RabbitMQProductNameUpdateConsumer(IConfiguration configuration, ILogger<RabbitMQProductNameUpdateConsumer> logger)
+        public RabbitMQProductNameUpdateConsumer(IConfiguration configuration, ILogger<RabbitMQProductNameUpdateConsumer> logger, IDistributedCache cache)
         {
             _configuration = configuration;
             _logger = logger;
@@ -28,6 +31,7 @@ namespace BusinessLogicLayer.RabbitMQ //version 6.8.1
             };
             _connection = factory.CreateConnection();
             _channel = _connection.CreateModel();
+            _cache = cache;
         }
 
         public void Consume()
@@ -36,7 +40,6 @@ namespace BusinessLogicLayer.RabbitMQ //version 6.8.1
             Dictionary<string, object> headers = new Dictionary<string, object>(){
                 {"x-match", "all" }, //all: tất cả các cặp key-value phải khớp; any: chỉ cần một trong các cặp key-value khớp
                 {"event", "product.update" },
-                {"field", "name" },
                 {"rowCount", 1 }
             };
             string queueName = "orders.product.update.name.queue";
@@ -66,19 +69,30 @@ namespace BusinessLogicLayer.RabbitMQ //version 6.8.1
             //received & consume message
             EventingBasicConsumer consumer = new EventingBasicConsumer(_channel);
 
-            consumer.Received += (sender, args) =>
+            consumer.Received += async (sender, args) =>
             {
                 byte[] body = args.Body.ToArray();
                 string message = Encoding.UTF8.GetString(body);
                 if (message != null)
                 {
-                    ProductNameUpdateMessage? productNameUpdateMessage = JsonSerializer.Deserialize<ProductNameUpdateMessage>(message);
-                    _logger.LogInformation($"Product name updated: {productNameUpdateMessage.ProductID}, New name: {productNameUpdateMessage.NewName}");
+                    ProductDTO? productDTO = JsonSerializer.Deserialize<ProductDTO>(message);
+                    _logger.LogInformation($"Product name updated: {productDTO.ProductID}, New name: {productDTO.ProductName}");
+                    await HandleProductUpdation(productDTO);
+
                 }
             };
 
             _channel.BasicConsume(queue: queueName, consumer: consumer, autoAck: true);
 
+        }
+
+        private async Task HandleProductUpdation(ProductDTO product)
+        {
+            string productString = JsonSerializer.Serialize(product);
+            string cacheKeyToWrite = $"product:{product.ProductID}";
+            DistributedCacheEntryOptions options = new DistributedCacheEntryOptions()
+                .SetAbsoluteExpiration(TimeSpan.FromMinutes(5));
+            await _cache.SetStringAsync(cacheKeyToWrite, productString, options);
         }
 
         public void Dispose()
